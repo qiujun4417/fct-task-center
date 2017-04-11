@@ -1,0 +1,20 @@
+
+lts:
+  tasktracker:
+     cluster-name: fct
+     registry-address: zookeeper://127.0.0.1:2181
+     node-group: fct_tasktracker
+     dataPath: /usr/src/lts/failstore
+     dispatch-runner:
+      enable: true
+      shard-value: fctType
+     configs:
+      job:
+       fail:
+        store: leveldb
+
+mysql:
+  connection:
+    url: jdbc:mysql://locahost:3306/vaccine_server_core?useUnicode=true&characterEncoding=UTF8&autoReconnect=true&rewriteBatchedStatements=TRUE&zeroDateTimeBehavior=convertToNull
+    username: admin
+    password: admin
