@@ -27,11 +27,6 @@
             <artifactId>fct-task-interfaces</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-        <dependency>
-            <groupId>com.fct.task</groupId>
-            <artifactId>fct-task-service</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
     </dependencies>
 
 </project>
